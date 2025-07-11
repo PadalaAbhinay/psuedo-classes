@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>psuedo-Classes</title>
+       <style>
+        button:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        /* change color of the first and last items*/
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: brown;
+        }
+        /* make the 2nd item bold*/
+        li:nth-child(2){
+            font-weight:bold;
+        }
+         
+        /*make the 3rd item lighter*/
+        li:nth-child(3){
+            color: blueviolet ;
+        }
+       </style>
+</head>
+<body>
+    <button>hover me!</button>
+    <ul>
+        <li>first-child</li>
+        <li>second-child</li>
+        <li>third-child</li>
+        <li>fourth-child</li>
+        <li>last-child</li>
+    </ul>
+    <input type="text" placeholder="Focus me!"><br><br>
+    <input type="checkbox" id="check1">
+    <label for="check1">check me</label>
+</body>
+</html>
